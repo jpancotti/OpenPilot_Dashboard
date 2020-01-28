@@ -61,6 +61,35 @@ Or in `#dashboard` on Slack https://comma.slack.com
 19. In a web browser, type in localhost:3000
 20. Enjoy
 
+# Mac OS 10.15.3 Installation Instructions
+
+1. `brew update
+2. `brew install influxdb
+3. `brew services start influxdb
+3. `influx` <-- Launch Influx
+4. `create database carDB` <-- Create database
+5. `exit` <-- quit influx
+6. `brew install grafana` <-- install grafana
+7. `brew services start grafana` <-- start grafana
+8. `sudo apt update` <-- update aptitude
+9. `sudo apt-get install grafana pip -y` <-- Install Grafana and pip
+10. `sudo systemctl daemon-reload` <--Reload systemd
+11. `sudo systemctl enable grafana-server` <-- Enable grafana on boot
+12. `sudo systemctl start grafana-server` <-- Start Grafana
+13. `pip install zmq`
+disable sip: reboot with Command-R into Recovery Mode. Terminal: csrutil disable
+mount data as readable file system 
+sudo mount -uw /
+killall Finder
+14. `pip install influxdb`
+15. `sudo pip install git`
+16. `git clone https://github.com/Gernby/OpenPilot_Dashboard.git`
+17. `python2.7 OpenPilot_Dashboard/ZMQ-Influx-Client.py`
+18. Connect to your EON Hotspot
+19. In a web browser, type in localhost:3000
+20. Enjoy
+
+
 Ask for support in `#openpilot-dashboard` on Discord https://discord.gg/Wyna3qy
 Or in `#dashboard` on Slack https://comma.slack.com
 
