@@ -77,11 +77,9 @@ Or in `#dashboard` on Slack https://comma.slack.com
 11. `sudo systemctl enable grafana-server` <-- Enable grafana on boot
 12. `sudo systemctl start grafana-server` <-- Start Grafana
 13. `pip install zmq`
-disable sip: reboot with Command-R into Recovery Mode. Terminal: csrutil disable
-mount data as readable file system 
-sudo mount -uw /
-killall Finder
-14. `pip install influxdb`
+14. `disable sip: reboot with Command-R into Recovery Mode. Terminal: csrutil disable
+15. `mount data as readable file system sudo mount -uw /`
+14. `sudo pip install influxdb`
 15. `sudo pip install git`
 16. `git clone https://github.com/Gernby/OpenPilot_Dashboard.git`
 17. `python2.7 OpenPilot_Dashboard/ZMQ-Influx-Client.py`
